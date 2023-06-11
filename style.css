@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 2% 5%;
+    background-color: aqua;
+}
+
+#A{
+    display: grid;
+    gap: 5%;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+    font-size: 350%;
+    font-family: cursive;
+    color: green;
+}
+
+#cont{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 50px;
+}
+
+a{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
