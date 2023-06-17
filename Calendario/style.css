@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  background-color: #cccccc;
+  padding: 5%;
+}
+
+.year {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  gap: 2vh;
+  justify-content: center;
+}
+
+.mes {
+  display: grid;
+  grid-template-rows: repeat(2, 45%);
+  height: 65vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.parteSuperior {
+  background-color: #e66c6b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 350%;
+}
+
+h2 {
+  font-size: 300%;
+}
+
+.dias {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(7, 14%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5%;
+  justify-content: center;
+}
+
+.dias > div {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h4 {
+  color: #e66c6b;
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  display: block;
+  margin: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+}
+
+p:hover {
+  background-color: #c4c4c4;
+}
+
+.extras {
+  color: gray;
+}
+
+.ganchos {
+  height: 4vh;
+  width: 1vh;
+  background-color: rgba(242, 242, 242, 0.998);
+  position: absolute;
+  top: 41%;
+  border-radius: 10px;
+  box-shadow: 0 2px gray;
+}
+
+.ganchoI1 {
+  left: 1vw;
+}
+
+.ganchoI2 {
+  left: 2vw;
+}
+
+.ganchoD1 {
+  right: 1vw;
+}
+
+.ganchoD2 {
+  right: 2vw;
+}
+
+@media (max-width: 1400px) {
+  .year {
+    grid-template-columns: repeat(3, 30%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .year {
+    grid-template-columns: repeat(2, 45%);
+  }
+}
+
+@media (max-width: 700px) {
+  .year {
+    grid-template-columns: repeat(1, 90%);
+  }
+
+  .ganchoI1 {
+    left: 2vw;
+  }
+
+  .ganchoD1 {
+    right: 2vw;
+  }
+
+  .ganchoI2 {
+    left: 5vw;
+  }
+
+  .ganchoD2 {
+    right: 5vw;
+  }
+}
+
+@media (max-height: 850px) {
+  .dias {
+    font-size: x-small;
+  }
+
+  .dias > *{
+    height: fit-content;
+  }
+}

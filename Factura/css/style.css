@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding-left: 3%;
+  background-color: aquamarine;
+}
+
+body > * {
+  background-color: white;
+  padding: 2%;
+}
+
+#contTop {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+img {
+  height: 10vh;
+}
+
+#bombillo {
+  margin-left: 10%;
+  padding: 1%;
+  background-color: #00b8a9;
+  text-align: center;
+  width: fit-content;
+}
+
+h3 {
+  color: white;
+}
+
+#contTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#title {
+  text-align: center;
+  color: #00b8a9;
+  font-size: 350%;
+  margin: 0;
+}
+
+#textos {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+#textos > * {
+  display: flex;
+  flex-direction: column;
+}
+
+#L {
+  align-items: flex-end;
+  padding-right: 5px;
+}
+
+h6 {
+  margin: 0;
+}
+
+#contInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 3% 0;
+  padding: 2%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px gray;
+}
+
+td {
+  padding: 1%;
+}
+
+#tableTitle {
+  background-color: #00b8a9;
+  color: white;
+}
+
+.textE {
+  text-align: left;
+}
+
+.color {
+  background-color: gray;
+}
+
+#textBottom {
+ 
+  display: grid;
+  grid-template-columns: repeat(2, 20%);
+  justify-content: end;
+  justify-items: end;
+  margin-top: 20px;
+
+}
+
+#niIdea{
+  margin-right: 5%; 
+}
+
+#contBottom{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  align-items: center;
+}
+
+#contBottom > h1{
+  color: #00b8a9;
+  text-align: end;
+}

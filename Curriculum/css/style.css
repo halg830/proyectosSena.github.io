@@ -1,0 +1,353 @@
+body{
+    margin: 0;
+    padding: 8vh 4vh;
+    background-color: #d0d0d0;
+}
+
+#cont1{
+    height: 30vh;
+    padding: 5vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/photo-1481437642641-2f0ae875f836.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.column{
+    width: 50%;
+}
+
+#preguntas{
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#preguntas > h3{
+    margin: 0;
+}
+
+#correo{
+    color: #189edc;
+}
+
+.row{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    
+}
+
+.row > *{
+    margin: 0;
+    color: white;
+}
+
+.row > h1{
+    font-size: 300%;
+}
+
+.row > button{
+    background-color: #189edc;
+    border-radius: 100px;
+    padding: 2%;
+}
+
+#row2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#barraNav{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#barraNav > img{
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    top: 46%;
+    left: 42%;
+    border-radius: 5000px;
+    border: 10px solid white;
+}
+
+.btNav{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.btNav > *{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    background-color: transparent;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid gray;
+    border-right: none;
+}
+
+.especial{
+    border-right: 1px solid gray;
+}
+
+.btText{
+    margin-right: 10%;
+    font-size: x-large;
+}
+
+#btLeft{
+    margin-left: 5%;
+}
+
+#btRight{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.imgBt{
+    margin-right: 10px;
+}
+
+.animacion:hover{
+    background-color: #Dedddd;
+    transform: scale(0.95);
+}
+
+.aumentar:hover{
+    transform: scale(1.25);
+}
+
+#cont2{
+    display: flex;
+}
+
+#cont2 > div{
+    padding: 5%;
+    width: 33%;
+}
+
+#quienSoy{
+    background-color: #f7f7f7;
+}
+
+#quienSoy > button{
+    border-radius: 100px;
+    border: 1px solid #189edc;
+    background-color: none;
+    color: #189edc;
+    padding: 2%;
+}
+
+#infoPersonal{
+    background-color: #f1f1f1;
+}
+
+#infoPersonal > p{
+    margin-bottom: 2%;
+}
+
+#exp{
+    background-color: #f7f7f7;
+}
+
+.lineaAzul{
+    height: 5px;
+    width: 40px;
+    background-color: #189edc;
+}
+
+#myResume {
+    background-color: white;
+    padding: 4% 5%;
+}
+
+#subMyResume{
+    display: flex;
+    max-width: 100%;
+}
+
+#subMyResume > div{
+    width: 33%;
+    height: fit-content;
+    margin: 0 1% 0 0;
+}
+
+.subContainers{
+    border: 1px solid #Dedddd;
+    padding: 3vh 3vh;
+    margin-bottom: 4%;
+}
+
+.nivel{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.nivel > *{
+    margin: 2%;
+}
+
+ul{
+    margin: 0;
+    padding-left: 3vh;
+}
+
+.lineaGris{
+    background-color: #Dedddd;
+    height: 5px;
+    width: 40px;
+}
+
+.titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.imgResume{
+    height: 64px;
+}
+
+.intereses{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.subIntereses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subIntereses > div{
+    border-radius: 5000px;
+    border: 2px solid #189edc;
+    padding: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.imgIntereses > img{
+    width: 40px;
+}
+
+@media(max-width:1340px){
+    #barraNav{
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        height: fit-content;
+    }
+
+    #barraNav > img{
+        top: 48.5%;
+        left: 80%;
+    }
+
+    #btRight{
+        margin-right: 0;
+        margin-left: 5%;
+        justify-content: flex-start;
+    }
+
+    .intereses{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+    }
+}
+
+@media (max-width:1100px){
+    #subMyResume{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    #subMyResume > div{
+        width: auto;
+    }
+
+    #divEspecial{
+        display: flex;
+    }
+}
+
+@media (max-width: 750px){
+    #cont1{
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        height: fit-content;
+    }
+    
+    #preguntas{
+        margin-top: 5%;
+    }
+
+    #cont2{
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+    }
+
+    #cont2 > div{
+        width: 100%;
+    }
+
+    #subMyResume{
+        grid-template-columns: repeat(1, 90%);
+    }
+
+    #divEspecial{
+        flex-direction: column;
+    }
+
+    #barraNav{
+        grid-template-columns: 38% 20% 38%;
+        justify-items: center;
+    }
+
+    .btNav{
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .btNav > button{
+        width: 33%;
+    }
+
+    .btText{
+        display: none;
+    }
+
+    .imgBt{
+        margin: 0;
+    }
+
+    #btRight{
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    #barraNav > img{
+        position: static;
+    }
+}

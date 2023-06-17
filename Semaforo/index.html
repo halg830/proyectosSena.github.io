@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo</title>
+</head>
+
+<body>
+    <div id="semaforo">
+        <div id="green"></div>
+        <div id="orange"></div>
+        <div id="red"></div>
+    </div>
+    <div id="palo"></div>
+    <button id="bt" onclick="cambiar()"></button>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+
+        #semaforo {
+            height: 500px;
+            width: 300px;
+            background-color: gray;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: -10px 10px rgb(0, 0, 0);
+        }
+
+        #semaforo>div {
+            width: 120px;
+            height: 120px;
+            margin: 12px 0;
+            border-radius: 100%;
+            box-shadow: inset -10px -10px white;
+        }
+
+        button {
+            background-color: gray;
+            border: 5px solid white;
+            border-radius: 100%;
+            width: 80px;
+            height: 80px;
+            color: white;
+            position: absolute;
+            top: 70%;
+
+        }
+
+        #palo {
+            height: 200px;
+            width: 10px;
+            background-color: gray;
+            box-shadow: -8px 8px rgb(0, 0, 0);
+        }
+    </style>
+
+    <script>
+        document.querySelector("#green").style.backgroundColor = "black"
+        document.querySelector("#orange").style.backgroundColor = "black"
+        document.querySelector("#red").style.backgroundColor = "black"
+
+        const verde = (c) => {
+            if (c === true) {
+                document.querySelector("#green").style.backgroundColor = "green"
+                document.querySelector("#bt").style.backgroundColor = "orange"
+                setTimeout(() => {
+                    document.querySelector("#green").style.backgroundColor = "black"
+                    orange(true)
+                }, 3000)
+            }
+
+        }
+
+        const orange = (c) => {
+            if (c === true) {
+                document.querySelector("#orange").style.backgroundColor = "orange"
+                document.querySelector("#bt").style.backgroundColor = "red"
+                setTimeout(() => {
+                    document.querySelector("#orange").style.backgroundColor = "black"
+                    red(true)
+                }, 3000)
+            }
+        }
+
+        const red = (c) => {
+            if (c === true) {
+                document.querySelector("#red").style.backgroundColor = "red"
+                document.querySelector("#bt").style.backgroundColor = "green"
+                setTimeout(() => {
+                    document.querySelector("#red").style.backgroundColor = "black"
+                    verde(true)
+                }, 3000)
+            }
+        }
+
+        verde(true)
+
+        function cambiar() {
+            if (document.querySelector("#green").style.backgroundColor == "green") {
+                document.querySelector("#green").style.backgroundColor = "black"
+                document.querySelector("#orange").style.backgroundColor = "orange"
+            } else if (document.querySelector("#orange").style.backgroundColor == "orange") {
+                document.querySelector("#orange").style.backgroundColor = "black"
+                document.querySelector("#red").style.backgroundColor = "red"
+            } else if (document.querySelector("#red").style.backgroundColor == "red") {
+                document.querySelector("#red").style.backgroundColor = "black"
+                document.querySelector("#green").style.backgroundColor = "green"
+            }
+
+        }
+    </script>
+</body>
+
+</html>

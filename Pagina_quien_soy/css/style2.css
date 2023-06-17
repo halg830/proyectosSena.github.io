@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+}
+
+#barraTop {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  background-color: #383c44;
+  align-items: center;
+  color: white;
+  font-size: xx-large;
+}
+
+#name,
+#contBtTop {
+  width: 50%;
+}
+
+#contBtTop {
+  display: flex;
+  justify-content: right;
+  margin-right: 8%;
+}
+
+#contBtTop > * {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: large;
+}
+
+#name {
+  margin-left: 8%;
+}
+
+#cont1 {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#subCont1,
+#subCont2 {
+  width: 50%;
+  padding: 2%;
+}
+
+#subCont1 {
+  padding-left: 8%;
+}
+
+#subCont2 {
+  padding-right: 8%;
+}
+
+h1 {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#img1 {
+  width: 100%;
+}
+
+#cont2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2% 8%;
+  background-color: #ff541c;
+  color: white;
+}
+
+#img2 {
+  border-radius: 5000px;
+}
+
+#cont3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2% 8%;
+  text-align: center;
+}
+
+
+
+#cont3 > h1 {
+  font-size: 350%;
+  
+  color: gray;
+}
+
+#proyect {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 2% 8%;
+}
+
+#proyect > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1%;
+  border: 1px solid gray;
+  padding-top: 0;
+  width: 20%;
+}
+
+.imgsProyect {
+  width: 100%;
+  height: 30%;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 4%;
+  justify-content: center;
+}
+
+.bt {
+  background-color: #ff541c;
+  border-radius: 5px;
+  border: 2px;
+  color: white;
+  padding: 2%;
+}
+
+#cont4 {
+  text-align: right;
+  padding: 2%;
+  background-color: #383c44;
+  color: white;
+  font-size: 105%;
+}
+
+.btProyect {
+  margin-bottom: 5%;
+  padding: 5%;
+  justify-content: flex-end;
+}
+
+#title1 {
+  color: #ff541c;
+  font-size: 350%;
+}
+
+#text {
+  font-size: x-large;
+}
+
+#text1 {
+  font-size: xx-large;
+  margin-bottom: 2%;
+}
+
+#name2 {
+  font-size: x-large;
+}
+
+.subProyect {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bt1 {
+  font-size: x-large;
+}
+
+.subProyect > p {
+  font-size: large;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1919px) {
+  .proyect {
+    flex-wrap: wrap;
+  }
+
+  .proyect > * {
+    flex-grow: 1;
+  }
+
+  #especial {
+    height: 100%;
+  }
+
+  .btProyect {
+    margin-top: 5%;
+  }
+
+  .imgEspecial {
+    height: 28%;
+  }
+
+  .subEspecial {
+    height: 74%;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1023px) {
+  #proyect {
+    flex-wrap: wrap;
+  }
+
+  #proyect > * {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 759px) {
+  #proyect {
+    flex-wrap: wrap;
+  }
+
+  #proyect > * {
+    width: 80%;
+    margin-bottom: 2%;
+  }
+
+  #cont1{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 759px) {
+  .titleProyect {
+    font-size: xx-large;
+  }
+
+  .subProyect > p {
+    font-size: x-large;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #barraTop{
+    font-size: large;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 70px;
+  }
+
+  #contBtTop > *{
+    font-size: small;
+  }
+
+  #name, #contBtTop{
+    margin: 1%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #cont1{
+    margin-top: 90px;
+  }
+
+  #subCont2{
+    padding: 2% 0;
+    text-align: center;
+  }
+
+  #bt1{
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width:380px){
+  #title1{
+    font-size: 300%;
+  }
+  
+  #cont3 > h1{
+    font-size: 250%;
+  }
+
+  #proyect > *{
+    height: fit-content;
+    width: fit-content;
+  }
+}
