@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+#btVolver{
+  top: 60px;
+}
+
 #barraTop {
   position: fixed;
   top: 0;
