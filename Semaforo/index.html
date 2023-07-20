@@ -15,7 +15,7 @@
         <div id="red"></div>
     </div>
     <div id="palo"></div>
-    <button id="bt" onclick="cambiar()"></button>
+    <button id="bt" onclick="cambiar()">Clic</button>
 
     <style>
         body {
@@ -50,7 +50,7 @@
         }
 
         button {
-            background-color: gray;
+            background-color: red;
             border: 5px solid white;
             border-radius: 100%;
             width: 80px;
@@ -73,12 +73,13 @@
         document.querySelector("#green").style.backgroundColor = "black"
         document.querySelector("#orange").style.backgroundColor = "black"
         document.querySelector("#red").style.backgroundColor = "black"
+        
+        let timeout
 
         const verde = (c) => {
             if (c === true) {
                 document.querySelector("#green").style.backgroundColor = "green"
-                document.querySelector("#bt").style.backgroundColor = "orange"
-                setTimeout(() => {
+                timeout = setTimeout(() => {
                     document.querySelector("#green").style.backgroundColor = "black"
                     orange(true)
                 }, 3000)
@@ -89,8 +90,7 @@
         const orange = (c) => {
             if (c === true) {
                 document.querySelector("#orange").style.backgroundColor = "orange"
-                document.querySelector("#bt").style.backgroundColor = "red"
-                setTimeout(() => {
+                timeout = setTimeout(() => {
                     document.querySelector("#orange").style.backgroundColor = "black"
                     red(true)
                 }, 3000)
@@ -100,8 +100,7 @@
         const red = (c) => {
             if (c === true) {
                 document.querySelector("#red").style.backgroundColor = "red"
-                document.querySelector("#bt").style.backgroundColor = "green"
-                setTimeout(() => {
+                timeout = setTimeout(() => {
                     document.querySelector("#red").style.backgroundColor = "black"
                     verde(true)
                 }, 3000)
@@ -113,13 +112,16 @@
         function cambiar() {
             if (document.querySelector("#green").style.backgroundColor == "green") {
                 document.querySelector("#green").style.backgroundColor = "black"
-                document.querySelector("#orange").style.backgroundColor = "orange"
+                clearTimeout(timeout)
+                orange(true)
             } else if (document.querySelector("#orange").style.backgroundColor == "orange") {
                 document.querySelector("#orange").style.backgroundColor = "black"
-                document.querySelector("#red").style.backgroundColor = "red"
+                clearTimeout(timeout)
+                red(true)
             } else if (document.querySelector("#red").style.backgroundColor == "red") {
                 document.querySelector("#red").style.backgroundColor = "black"
-                document.querySelector("#green").style.backgroundColor = "green"
+                clearTimeout(timeout)
+                verde(true)
             }
 
         }
