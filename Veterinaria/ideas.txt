@@ -1,0 +1,11 @@
+en el cuadro agregar, aparezcan los cuadros para llenar desde ahí (hay que hacer un apartado para ver el agregado reciente)
+
+ampliar cita
+
+boton editar cambia el texto por input
+
+sintomas en caso de superar cierto tamaño, se hace deslizable
+
+añadir pagination, boostrap
+
+meter todos los atributos en un vector con objetos y recorrerlo

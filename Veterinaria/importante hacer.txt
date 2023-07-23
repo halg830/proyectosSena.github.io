@@ -1,0 +1,17 @@
+-mejorar tiempo errores
+
+-animacion agregar
+
+-agregar categoria de animales
+
+-responsive (falta en nest hub)
+
+-diseño errores
+
+-verificar todas las verificaciones en guardar y editar
+
+-colores de la página
+
+-no activacion de eliminar cuando se da editar y viceversa 
+
+-confirmación antes de descartar cambios

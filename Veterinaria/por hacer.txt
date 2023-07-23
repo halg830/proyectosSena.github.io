@@ -1,0 +1,5 @@
+-mejorar tiempo errores
+
+-arreglar responsividad
+
+borde negro en sintomas después de editar o cancelar 

@@ -1,4 +1,5 @@
 const proyects = [
+  "./Veterinaria/index.html",
   "./Calculadora/index.html",
   "./Calendario/index.html",
   "./Curriculum/cv.html",
@@ -8,6 +9,7 @@ const proyects = [
   "./Semaforo/index.html"
 ];
 const fondos = [
+  "https://cdn-icons-png.flaticon.com/128/7174/7174739.png",
   "./img/calculadora.png",
   "https://cdn.icon-icons.com/icons2/3150/PNG/512/calendar_icon_192645.png",
   "./img/cv.png",
