@@ -6,7 +6,8 @@ const proyects = [
   "./Factura/index.html",
   "./Galería/index.html",
   "./Pagina_quien_soy/index.html",
-  "./Semaforo/index.html"
+  "./Semaforo/index.html",
+  "./TiendaOnline/index.html"
 ];
 const fondos = [
   "https://cdn-icons-png.flaticon.com/128/7174/7174739.png",
@@ -16,7 +17,8 @@ const fondos = [
   "./img/factura.png",
   "./img/galeria.png",
   "./img/quienSoy.png",
-  "./img/semaforo.png"
+  "./img/semaforo.png",
+  "./img/tienda.png"
 ];
 
 const extra = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"

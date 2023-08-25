@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  background-color: #e7e7e7;
+}
+#contBody[data-v-6ea1e703] {
+  background-image: url("./fondo-07548025.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.card[data-v-6ea1e703] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+  color: #fff;
+  padding: 20px;
+  background: linear-gradient(45deg, rgba(255, 0, 106, 0.882), #0048ffad);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px #0000001f;
+  width: 400px;
+  height: 300px;
+}
+.card[data-v-6ea1e703]:hover {
+  box-shadow: 0 0 10px #fff;
+}
+.card > *[data-v-6ea1e703] {
+  margin: 10px;
+}
+.card > button[data-v-6ea1e703] {
+  width: 100%;
+}
+.imgArt[data-v-6ea1e703] {
+  width: 150px;
+  height: 110px;
+}
+#trBottom > *[data-v-6ea1e703] {
+  border-top: 1px solid black;
+}
+#body[data-v-6ea1e703] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+#body > h1[data-v-6ea1e703] {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 50px;
+  box-shadow: 0 0 10px #ff00f7;
+  width: 100%;
+  margin-top: 0;
+}
+#cont[data-v-6ea1e703] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+table[data-v-6ea1e703] {
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  border: 1px solid black;
+  background: linear-gradient(110deg, #7a008feb, #001785c7);
+  text-align: center;
+  border-collapse: collapse;
+  z-index: 5000;
+  border-radius: 4px;
+  border-color: #fff;
+}
+td[data-v-6ea1e703] {
+  border-bottom: 1px solid black;
+  padding: 15px;
+}
+.imgCar[data-v-6ea1e703] {
+  width: 80px;
+}
+#barraTop[data-v-6ea1e703] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #7a008feb, #001785c7);
+  box-shadow: 5px 5px 30px #ff00f7;
+  color: #fff;
+  text-shadow: 0 0 5px white;
+  padding: 0 20px;
+  margin-bottom: 4px;
+}
+.fondo[data-v-6ea1e703] {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(https://img1.wallspic.com/crops/5/9/5/8/3/138595/138595-monitor_de_computadora_de_pantalla_plana_negra_con_teclado_y_mouse-3840x2160.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.iconocarro[data-v-6ea1e703] {
+  height: 70px;
+  width: 70px;
+  font-size: 37px;
+  background-color: transparent;
+  border: 0px;
+  color: #000;
+}
+.iconocarro[data-v-6ea1e703]:hover {
+  background-color: #001dab;
+}
+.tituloinicio[data-v-6ea1e703] {
+  font-size: 10vw;
+  text-shadow: 0px 0px 10px white;
+}
+.agregar[data-v-6ea1e703] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  height: 30px;
+  border-radius: 10px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  position: relative;
+  overflow: hidden;
+}
+.agregar span[data-v-6ea1e703] {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+.agregar[data-v-6ea1e703]:after {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: calc(-100% - 80px);
+  border-bottom: 80px solid blue;
+  border-right: 80px solid transparent;
+  transition: 0.4s ease-in-out all;
+}
+.agregar[data-v-6ea1e703]:hover:after {
+  left: 0;
+}
+.botonescarrito[data-v-6ea1e703] {
+  background-color: #000;
+  color: #fff;
+}
+.botonescarrito[data-v-6ea1e703]:hover {
+  background-color: #484848;
+}
+.vaciarcarrito[data-v-6ea1e703] {
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+}
+.vaciarcarrito[data-v-6ea1e703]:hover {
+  background-color: #484848;
+}
