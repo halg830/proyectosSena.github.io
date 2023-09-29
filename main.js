@@ -1,4 +1,5 @@
 const proyects = [
+  "./Pokedex/index.html",
   "./ahorcado/index.html",
   "./Veterinaria/index.html",
   "./Calculadora/index.html",
